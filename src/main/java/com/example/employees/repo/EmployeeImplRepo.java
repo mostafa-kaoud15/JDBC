@@ -26,7 +26,7 @@ public class EmployeeImplRepo implements EmployeeRepo {
             logger.addHandler(fileHandler);
             logger.setLevel(Level.ALL); // Ensure all levels are logged
         } catch (IOException e) {
-            System.err.println("Failed to set up file handler for BookService logger: " + e.getMessage());
+            System.err.println("Failed to set up file handler : " + e.getMessage());
             e.printStackTrace();
         }
     }
